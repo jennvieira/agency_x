@@ -60,9 +60,10 @@ body {
   border-radius: 0;
 }
 
-.icon-bar {
-  background-color: $mainWhite;
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
 
 #nav_brand_text {
   // border: 1px solid purple;
@@ -92,6 +93,7 @@ body {
 
 
 @media #{$desktop} {
+
   #main_header {
     height: 375px;
     background-image: url('../img/temp_header_img.jpg');
@@ -130,9 +132,13 @@ body {
     background-color: $mainBlack;
     height: 300px;
     display: table;
-    #section_one_content{
-      display: table-cell;
+    width: 100%;
+    .section_one_content {
       vertical-align: middle;
+      display: none;
+    }
+    #section_one_content_home{
+      display: table-cell;
     }
     p {
       font-family: $paragraph;
@@ -141,12 +147,106 @@ body {
   }
 }
 
+//***************SECTION 2 STYLING *************//
+
+#section_two_header {
+padding-top: 25px;
+  h3 {
+    color: $mainBlack;
+    font-size: 1.4em;
+  }
+  .section_two_spec_title {
+    color: $mainBlue;
+    letter-spacing: .03em;
+  }
+  p {
+    font-family: $paragraph;
+    font-size: .75em;
+    margin-top: 25px;
+  }
+}
+
+#section_two_services_title {
+  font-size: 1.4em;
+  color: $mainBlack;
+}
+
+#services_icon_container {
+  text-align: center;
+  .figure-caption {
+    color: $mainBlack;
+    font-size: 1em;
+  }
+}
+
+@media #{$desktop} {
+  #section_two_header {
+    padding-top: 50px;
+    h3 {
+      font-size: 2.2em;
+    }
+    p {
+      font-size: 1em;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+  #services_icon_container {
+    text-align: left;
+    .figure-caption {
+      text-align: center;
+    }
+  }
+
+}
 
 
 
+//***************SECTION 3 STYLING *************//
+
+@media #{$desktop} {
+#section_three{
+  background-color: $mainBlack;
+  color: $mainWhite;
+  #section_three_content{
+    padding-top: 75px;
+    padding-bottom: 65px;
+    h5{
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: $paragraph;
+      font-size: .75em;
+      color: #a8a8a8;
+      margin-bottom: 10px;
+    }
+  }
+}
 
 
+}
 
+
+//***************FOOTER STYLING *************//
+
+#main_footer {
+  height: 100px;
+  background-color: $mainBlack;
+  text-align: center;
+  p {
+    color: $mainWhite;
+    font-family: $paragraph;
+    font-size: .75em;
+    padding-top:37px;
+  }
+}
+
+@media #{$desktop} {
+  #main_footer {
+    background-color: $mainBlue;
+  }
+}
 
 
 

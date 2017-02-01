@@ -50,15 +50,15 @@
     <ul class="navbar-nav mr-auto">
 
         <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#" id="0">Home<span class="sr-only">(current)</span></a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#" id="1">About Us</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#" id="2">Contact</a>
         </li>
 
 
@@ -81,12 +81,43 @@
 
 <section id="section_one" class="hidden-md-down"> <!-- ..............BEGIN SECTION ONE ................-->
 
-<div class="container-fluid" id="section_one_content">
+
+<!-- show this section when HOME is clicked-->
+<div class="container-fluid section_one_content" id="section_one_content_home"><!--Section 1 HOMEPAGE-->
 <div class="row">
   <div class="col-lg-6 offset-lg-3"><p>Every business’s technology requirements are different and having the right IT support is critical.  
     That’s where we come in.</p></div>
   </div>
+</div>   <!--end Section 1 HOMEPAGE-->
+
+
+<!-- show this section when ABOUT is clicked-->
+<div class="container-fluid section_one_content" id="section_one_content_about"> <!--Section 1 ABOUT PAGE-->
+<div class="row">
+  <div class="col-lg-3 offset-lg-3">
+    <figure class="figure">
+      <img src="img/icon.png" class="figure-img img-fluid" alt="About Us Icon">
+      <figcaption class="figure-caption">Networking Specialist</figcaption>
+    </figure>
+  </div>
+  <div class="col-lg-3">
+    <figure class="figure">
+      <img src="img/icon.png" class="figure-img img-fluid" alt="About Us Icon">
+      <figcaption class="figure-caption">Virtualization and Windows<br>Server Support Specialist</figcaption>
+    </figure>
+  </div>
+
 </div>
+</div><!--End Section 1 ABOUT PAGE-->
+
+
+<!-- show this section when CONTACT is clicked-->
+<div class="container-fluid section_one_content" id="section_one_content_contact"><!--Section 1 CONTACT-->
+<div class="row">
+  <div class="col-lg-6 offset-lg-3"><p>Contact us.</p></div>
+  </div>
+</div>   <!--end Section 1 CONTACT-->
+
 
 
 </section><!-- ..............END SECTION ONE ................-->
@@ -99,17 +130,31 @@
 
 <section id="section_two"> <!-- ..............BEGIN SECTION TWO ................-->
 
-
+<div class="container" id="section_two_header">
+<div class="row">
+<div class="col-sm-12 col-lg-8">
 <h3>TRUSTED IT SUPPORT FOR</h3>
-<h3>CORPORATE NETWORKS</h3>
+<h3><span class="section_two_spec_title">CORPORATE NETWORKS</span></h3>
 
-<p>Every business’ technology requirements are different and having the right IT support is critical.  
-  That’s where we come in.</p>
+<p>Every business’ technology requirements are different and having the right IT support is critical.
+  That’s where we come in.<span class="hidden-md-down"> Our focus is to help clients maximize user
+    productivity, simplify administration and fortify information security for corporate networks.</span></p>
 
-<h4 class="hidden-lg-up">OUR SERVICES</h4>
+</div>
+</div>
+</div>
 
 
 <div class="container">
+<div class="row">
+<div class="col-sm-12 hidden-lg-up">
+<h3 id="section_two_services_title">OUR SERVICES</h3>
+</div>
+</div>
+</div>
+
+
+<div class="container" id="services_icon_container">
 <div class="row">
 
 <div class="col-sm-12 col-lg-12">
@@ -149,7 +194,7 @@
 
 <section id="section_three" class="hidden-md-down"><!-- ..............BEGIN SECTION THREE ................-->
 
-<div class="contatiner">
+<div class="container" id="section_three_content">
   <div class="row">
 
     <div class="col-lg-6">
@@ -176,7 +221,7 @@
 
 
 
-<footer><!-- ..............BEGIN FOOTER ................-->
+<footer id="main_footer"><!-- ..............BEGIN FOOTER ................-->
 
 <p>Copyright M World Systems 2017</p>
 
