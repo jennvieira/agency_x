@@ -1,0 +1,158 @@
+//FONTS
+@font-face {
+    font-family: 'Gilroy Extra Bold';
+    src: url('../fonts/gilroy/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Semi Bold';
+    src: url('../fonts/opensans/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/opensans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+//Font Variables
+$heading: 'Gilroy Extra Bold', Helvetica, sans-serif;
+$paragraph: 'Open Sans Semi Bold', Helvetica, sans-serif;
+
+//Colour variables
+$mainBlue: #3047d3;
+$mainWhite: #FFFFFF;
+$mainBlack: #000000;
+
+
+//media query variables
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 992px)";
+
+//resets
+.nopadding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  font-family: $heading;
+}
+
+
+//***************NAV/HEADER STYLING *************//
+#main_nav {
+  // border: 1px solid yellow;
+  padding: 0;
+}
+
+#nav_toggle_but {
+  // border: 1px solid green;
+  width: 50%;
+  right: 0;
+  height: 100%;
+  background-color: $mainBlue;
+  border-radius: 0;
+}
+
+.icon-bar {
+  background-color: $mainWhite;
+}
+
+#nav_brand_text {
+  // border: 1px solid purple;
+  width:50%;
+  height: 100%;
+  margin: 0;
+  background-color: $mainBlack;
+  color: $mainWhite;
+  text-align: center;
+}
+
+#nav_content {
+  position: absolute;
+  z-index: 1;
+  background-color: $mainBlack;
+  opacity: 0.8;
+  width:100%;
+  height:100vh;
+  top:0;
+  padding-top: 100px;
+  ul li a {
+    color: $mainWhite;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+
+@media #{$desktop} {
+  #main_header {
+    height: 375px;
+    background-image: url('../img/temp_header_img.jpg');
+    text-align: center;
+    color: $mainWhite;
+    h2{
+      margin-top: 100px;
+      font-size: 2.5em;
+    }
+  }
+
+  #main_nav {
+    background-color: transparent;
+  }
+
+  #nav_content{
+    background-color: transparent;
+    position: static;
+    height: auto;
+    width: 100%;
+    padding: 50px 40px 0 40px;
+    opacity: 1;
+    ul li a {
+      font-size: 1.3em;
+      color: $mainWhite;
+      margin-right: 50px;
+    }
+  }
+}
+
+
+//***************SECTION 1 STYLING *************//
+
+@media #{$desktop} {
+  #section_one {
+    background-color: $mainBlack;
+    height: 300px;
+    display: table;
+    #section_one_content{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    p {
+      font-family: $paragraph;
+      color: $mainWhite;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end styles
