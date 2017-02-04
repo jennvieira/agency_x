@@ -37,36 +37,42 @@
   <h1 class="sr-only">M WORLD SYSTEMS Website</h1>
 
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="main_nav"> <!-- .............. BEGIN MAIN NAV ................-->
+  <h2 class="sr-only">Main Navigation</h2>
 
   <button id="nav_toggle_but" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
   data-target="#nav_content" aria-controls="nav_content" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
   </button>
 
-  <a id="nav_brand_text" class="navbar-brand hidden-lg-up" id="mobile_logo" href="#">M WORLD<br>SYSTEMS</a>
+  <a id="nav_brand_text" class="navbar-brand hidden-lg-up" href="#">M WORLD<br>SYSTEMS</a>
 
   <div class="collapse navbar-collapse" id="nav_content">
 
     <ul class="navbar-nav mr-auto">
 
-        <li class="nav-item active">
-        <a class="nav-link" href="#" id="0">Home<span class="sr-only">(current)</span></a>
+
+        <li class="nav-item" id="link0">
+        <a class="nav-link active_link active" href="index.html"  data-toggle="collapse" data-target="#nav_content" id="0">Home<span class="sr-only">(current)</span></a>
         </li>
 
-        <li class="nav-item">
-        <a class="nav-link" href="#" id="1">About Us</a>
+        <li class="nav-item" id="link1">
+        <a class="nav-link" href="index.html" data-toggle="collapse" data-target="#nav_content" id="1">About Us</a>
         </li>
 
-        <li class="nav-item">
-        <a class="nav-link" href="#" id="2">Contact</a>
+        <li class="nav-item" id="link3">
+        <a class="nav-link" href="index.html" data-toggle="collapse" data-target="#nav_content" id="2">Contact</a>
         </li>
 
 
     </ul>
 
 
-    <button class="btn hidden-md-down" type="button">email</button>
-    <button class="btn hidden-md-down" type="button">phone</button>
+    <button class="hidden-md-down">
+      <img class="btn" src="img/mail.svg" alt="Mail Icon">
+    </button>
+    <button class="hidden-md-down">
+    <img class="btn" src="img/call.svg" alt="Phone Icon">
+    </button>
 
   </div>
 
@@ -79,11 +85,12 @@
 
 
 
-<section id="section_one" class="hidden-md-down"> <!-- ..............BEGIN SECTION ONE ................-->
-
+<section id="section_one"> <!-- ..............BEGIN SECTION ONE ................-->
+  <h3 class="sr-only">Section 1 Content</h3>
 
 <!-- show this section when HOME is clicked-->
-<div class="container-fluid section_one_content" id="section_one_content_home"><!--Section 1 HOMEPAGE-->
+<div class="container-fluid section_one_content hidden-md-down" id="section_one_content_home"><!--Section 1 HOMEPAGE-->
+  <h4 class="sr-only">About M World Systems</h4>
 <div class="row">
   <div class="col-lg-6 offset-lg-3"><p>Every business’s technology requirements are different and having the right IT support is critical.  
     That’s where we come in.</p></div>
@@ -93,17 +100,20 @@
 
 <!-- show this section when ABOUT is clicked-->
 <div class="container-fluid section_one_content" id="section_one_content_about"> <!--Section 1 ABOUT PAGE-->
-<div class="row">
-  <div class="col-lg-3 offset-lg-3">
-    <figure class="figure">
-      <img src="img/icon.png" class="figure-img img-fluid" alt="About Us Icon">
-      <figcaption class="figure-caption">Networking Specialist</figcaption>
+  <h4 class="sr-only">About Us Clickable Icons</h4>
+<div class="row justify-content-center">
+
+  <div class="col-xs-6">
+    <figure class="figure team_member" id="carly">
+      <img src="img/member.svg" class="figure-img img-fluid" alt="About Us Icon">
+      <figcaption class="figure-caption member_caption active_member">Networking Specialist</figcaption>
     </figure>
   </div>
-  <div class="col-lg-3">
-    <figure class="figure">
-      <img src="img/icon.png" class="figure-img img-fluid" alt="About Us Icon">
-      <figcaption class="figure-caption">Virtualization and Windows<br>Server Support Specialist</figcaption>
+
+  <div class="col-xs-6">
+    <figure class="figure team_member" id="jenn">
+      <img src="img/member.svg" class="figure-img img-fluid" alt="About Us Icon">
+      <figcaption class="figure-caption member_caption">Virtualization and Windows<br>Server Support Specialist</figcaption>
     </figure>
   </div>
 
@@ -113,8 +123,9 @@
 
 <!-- show this section when CONTACT is clicked-->
 <div class="container-fluid section_one_content" id="section_one_content_contact"><!--Section 1 CONTACT-->
+  <h4 class="sr-only">Contact Us Blurb</h4>
 <div class="row">
-  <div class="col-lg-6 offset-lg-3"><p>Contact us.</p></div>
+  <div class="col-lg-6 offset-lg-3"><p>Think one of our specialists is right for you? Let us know.</p></div>
   </div>
 </div>   <!--end Section 1 CONTACT-->
 
@@ -129,7 +140,12 @@
 
 
 <section id="section_two"> <!-- ..............BEGIN SECTION TWO ................-->
+  <h3 class="sr-only">Section 2 Content</h3>
 
+
+<!-- show this section when HOME is clicked-->
+<div id="section_two_content_home" class="section_two_content">  <!-- Section 2 HOMEPAGE-->
+  <h4 class="sr-only">Homepage Company Info/Services</h4>
 <div class="container" id="section_two_header">
 <div class="row">
 <div class="col-sm-12 col-lg-8">
@@ -159,14 +175,14 @@
 
 <div class="col-sm-12 col-lg-12">
 <figure class="figure">
-  <img src="img/icon_virtualization.png" class="figure-img img-fluid" alt="Virtualization Icon">
+  <img src="img/virtualization.svg" class="figure-img img-fluid" alt="Virtualization Icon">
   <figcaption class="figure-caption">Virtualization</figcaption>
 </figure>
 </div>
 
 <div class="col-sm-12 col-lg-8 offset-lg-4">
 <figure class="figure">
-  <img src="img/icon_networking.png" class="figure-img img-fluid" alt="Networking Icon">
+  <img src="img/networking.svg" class="figure-img img-fluid" alt="Networking Icon">
   <figcaption class="figure-caption">Networking</figcaption>
 </figure>
 </div>
@@ -174,7 +190,7 @@
 
 <div class="col-sm-12 col-lg-4 offset-lg-8">
 <figure class="figure">
-  <img src="img/icon_windows.png" class="figure-img img-fluid" alt="Windows Server Support">
+  <img src="img/wss.svg" class="figure-img img-fluid" alt="Windows Server Support">
   <figcaption class="figure-caption">Windows Server Support</figcaption>
 </figure>
 </div>
@@ -182,6 +198,203 @@
 
 </div>
 </div>
+
+</div> <!-- end Section 2 HOMEPAGE-->
+
+
+<!-- show this section when ABOUT US is clicked-->
+<div id="section_two_content_about" class="section_two_content"><!-- Section 2 ABOUT-->
+    <h4 class="sr-only">About Us Description, Skill, and Certifications</h4>
+
+  <div class="container">
+
+  <div class="row">
+    <div class="col-12 col-lg-6 offset-lg-3">
+    <h3 class="about_title">TITLE PLACEHOLDER</h3>
+    <h3 class="about_name">NAME PLACEHOLDER</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-lg-8 offset-lg-2">
+      <p class="about_desc">Description placeholder. Description placeholder. Description placeholder. Description placeholder.
+      Description placeholder.Description placeholder.Description placeholder.Description placeholder.
+    Description placeholder.Description placeholder.Description placeholder.Description placeholder. Description placeholder.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-lg-3 offset-lg-1">
+      <h4>TECHNICAL SKILLS</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-lg-8 offset-lg-2">
+      <ul class="tech_skills_list">
+        <li class="bullet"><p class="about_skill" data-box="0">point 1 placeholder point 1 placeholder point 1 placeholder</p></li>
+        <li class="bullet"><p class="about_skill" data-box="1">point 2 placeholde point 1 placeholder point 1 placeholderr</p></li>
+        <li class="bullet"><p class="about_skill" data-box="2">point 3 placeholder point 1 placeholder point 1 placeholder</p></li>
+        <li class="bullet"><p class="about_skill" data-box="3">point 4 placeholder point 1 placeholder point 1 placeholder</p></li>
+        <li class="bullet"><p class="about_skill" data-box="4">point 5 placeholder point 1 placeholder point 1 placeholder</p></li>
+        <li class="bullet"><p class="about_skill" data-box="5">point 6 placeholder point 1 placeholderpoint 1 placeholder</p></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12 col-lg-4 offset-lg-1">
+      <h4>SOME OTHER SKILLS...</h4>
+    </div>
+  </div>
+
+  <div id="other_skills_con_carly" class="other_skills_con">
+  <div class="row justify-content-center">
+
+    <div class="col-6 col-lg-3 figure_con">
+      <figure class="figure">
+        <img src="img/pm.svg" class="figure-img img-fluid" alt="Project Managemnet Icon">
+        <figcaption class="figure-caption">Project Management</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-6 col-lg-3 col figure_con">
+      <figure class="figure">
+        <img src="img/pressure.svg" class="figure-img img-fluid" alt="Well Under Pressure Icon">
+        <figcaption class="figure-caption">Works well under pressure</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-6 col-lg-3 figure_con">
+      <figure class="figure">
+        <img src="img/troubleshoot.svg" class="figure-img img-fluid" alt="Troubleshooting Icon">
+        <figcaption class="figure-caption">Troubleshooting</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-6 col-lg-3 figure_con">
+      <figure class="figure">
+        <img src="img/network_knowledge.svg" class="figure-img img-fluid" alt="Networking Icon">
+        <figcaption class="figure-caption">Network Knowledge</figcaption>
+      </figure>
+    </div>
+
+
+  </div>
+</div>
+
+  <div id="other_skills_con_jenn" class="other_skills_con">
+  <div class="row">
+
+    <div class="col-12 col-lg-4">
+      <h5>10+</h5>
+      <h6>yrs</h6>
+      <div class="bar1 hidden-md-down"></div>
+      <p>Wmware</p>
+      <p>Microsoft Office</p>
+      <p>System Administration</p>
+      <p>Windows Server</p>
+      <p>Vbscript</p>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <h5>6-8</h5>
+      <h6>yrs</h6>
+      <div class="bar2 hidden-md-down"></div>
+      <p>Active Directory</p>
+      <p>Management</p>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <h5>2-5</h5>
+      <h6>yrs</h6>
+      <div class="bar3 hidden-md-down"></div>
+      <p>Network Administration</p>
+      <p>Windows Powershell</p>
+      <p>Vrealize Automation and Orchestrator</p>
+    </div>
+
+
+  </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12 col-lg-3 offset-lg-1">
+      <h4>CERTIFICATIONS</h4>
+    </div>
+  </div>
+
+
+  <div class="row" id="certification_con">
+    <div class="col-12 col-lg-2">
+      <img src="img/certification.svg" class="img-fluid" alt="Certification Icon">
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <p class="cert" data-box="0">Certifcation Placeholder</p>
+    </div>
+
+    <div class="col-12 col-lg-2">
+      <img src="img/certification.svg" class="img-fluid" alt="Certification Icon">
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <p class="cert" data-box="1">Certifcation Placeholder</p>
+    </div>
+
+  </div>
+
+
+
+  </div>
+
+
+
+</div><!-- END Section 2 ABOUT-->
+
+
+
+<!-- show this section when CONTACT is clicked-->
+<div id="section_two_content_contact" class="section_two_content"><!-- Section 2 CONTACT-->
+    <h4 class="sr-only">Contact Number, Address, and Location</h4>
+
+<div class="container">
+<div class="row">
+
+  <div class="col-12 col-lg-4">
+    <figure class="figure">
+      <img src="img/phone-blue.svg" class="figure-img img-fluid" alt="Phone Icon">
+      <figcaption class="figure-caption">(519) 123 - 1234</figcaption>
+    </figure>
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <figure class="figure">
+      <img src="img/location-blue.svg" class="figure-img img-fluid" alt="Location Icon">
+      <figcaption class="figure-caption">123 Dundas St. <br> London, ON</figcaption>
+    </figure>
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <figure class="figure">
+      <img src="img/mail-blue.svg" class="figure-img img-fluid" alt="Mail Icon">
+      <figcaption class="figure-caption">info@mworldsystems</figcaption>
+    </figure>
+  </div>
+
+
+</div>
+</div>
+
+
+
+
+
+</div><!-- END Section 2 CONTACT-->
+
+
 
 
 </section><!-- ..............END SECTION TWO ................-->
@@ -193,8 +406,10 @@
 
 
 <section id="section_three" class="hidden-md-down"><!-- ..............BEGIN SECTION THREE ................-->
+    <h3 class="sr-only">Section 3 Content</h3>
 
 <div class="container" id="section_three_content">
+    <h4 class="sr-only">Team Member Info and Contact Info</h4>
   <div class="row">
 
     <div class="col-lg-6">
@@ -222,6 +437,7 @@
 
 
 <footer id="main_footer"><!-- ..............BEGIN FOOTER ................-->
+<h4>class="sr-only">Main Footer</h4>
 
 <p>Copyright M World Systems 2017</p>
 
@@ -240,6 +456,7 @@
 
 
 <script src="script/main.js"></script>
+<script src="script/about_content.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="script/bootstrap/bootstrap.js"></script>
 
