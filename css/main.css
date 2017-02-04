@@ -193,8 +193,7 @@ body {
     font-size: 1.3em; }
   #section_two_content_about .about_name {
     color: #3047d3;
-    letter-spacing: .5px;
-    opacity: 0; }
+    letter-spacing: .5px; }
   #section_two_content_about .about_desc {
     font-family: "Open Sans Semi Bold", Helvetica, sans-serif;
     margin-top: 25px;
